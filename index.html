@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js" defer></script>
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <main class="container">
+      <nav class="nav">
+        <div class="menu">
+          <button class="btn-menu">
+            <img
+              class="open"
+              src="/images/icon-menu.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <img
+              class="close"
+              src="/images/icon-close.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </button>
+          <img class="logo" src="/images/logo.svg" alt="sneakers" />
+          <ul>
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="status">
+          <button type="button" class="btn-cart">
+            <img src="/images/icon-cart.svg" alt="photo of cart" />
+            <span class="noti">0</span>
+          </button>
+          <div class="cart-box">
+            <p>Cart</p>
+            <p class="empty">Your cart is empty.</p>
+            <div class="item-in-cart">
+              <div class="item">
+                <img
+                  src="/images/image-product-1-thumbnail.jpg"
+                  alt="photo of fall limited edition sneakers"
+                />
+                <div class="item-detail">
+                  <p>Fall Limited Edition Sneakers</p>
+                  <div class="price-calculation">
+                    <p class="price-and-amount">$125 x <span></span></p>
+                    <p class="total"></p>
+                  </div>
+                </div>
+                <button class="btn-delete">
+                  <img
+                    src="/images/icon-delete.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </button>
+              </div>
+              <button class="btn-checkout">Checkout</button>
+            </div>
+          </div>
+          <img
+            class="avatar"
+            src="/images/image-avatar.png"
+            alt=""
+            aria-hidden="true"
+          />
+        </div>
+      </nav>
+      <section class="content">
+        <div class="img-product">
+          <ul class="products products-page">
+            <li>
+              <img
+                class="img-1"
+                src="/images/image-product-1.jpg"
+                alt="photo of fall limited edition sneakers"
+              />
+            </li>
+            <li>
+              <img
+                class="img-2"
+                src="/images/image-product-2.jpg"
+                alt="photo of fall limited edition sneakers"
+              />
+            </li>
+            <li>
+              <img
+                class="img-3"
+                src="/images/image-product-3.jpg"
+                alt="photo of fall limited edition sneakers"
+              />
+            </li>
+            <li>
+              <img
+                class="img-4"
+                src="/images/image-product-4.jpg"
+                alt="photo of fall limited edition sneakers"
+              />
+            </li>
+          </ul>
+          <ul class="thumbnails thumbnails-page">
+            <li class="img-1">
+              <img
+                src="/images/image-product-1-thumbnail.jpg"
+                alt="thumbnail of fall limited edition sneakers"
+              />
+              <div class="overlay"></div>
+            </li>
+            <li class="img-2">
+              <img
+                src="/images/image-product-2-thumbnail.jpg"
+                alt="thumbnail of fall limited edition sneakers"
+              />
+              <div class="overlay"></div>
+            </li>
+            <li class="img-3">
+              <img
+                src="/images/image-product-3-thumbnail.jpg"
+                alt="thumbnail of fall limited edition sneakers"
+              />
+              <div class="overlay"></div>
+            </li>
+            <li class="img-4">
+              <img
+                src="/images/image-product-4-thumbnail.jpg"
+                alt="thumbnail of fall limited edition sneakers"
+              />
+              <div class="overlay"></div>
+            </li>
+          </ul>
+          <button class="btn-product btn-prev" type="button">
+            <img src="/images/icon-previous.svg" alt="" aria-hidden="true" />
+          </button>
+          <button class="btn-product btn-next" type="button">
+            <img src="/images/icon-next.svg" alt="" aria-hidden="true" />
+          </button>
+        </div>
+        <div class="details">
+          <div class="text">
+            <p>Sneaker Company</p>
+            <h1>Fall Limited Edition Sneakers</h1>
+            <p>
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+          </div>
+          <div class="pricing">
+            <div class="discount">
+              <p>$125.00</p>
+              <p>50%</p>
+            </div>
+            <p>$250.00</p>
+          </div>
+          <form class="form">
+            <div class="amount">
+              <button class="btn-minus" type="button">
+                <img src="/images/icon-minus.svg" alt="" aria-hidden="true" />
+              </button>
+              <div class="amount-of-product">
+                <label for="amount-of-product">Amount of product</label>
+                <input
+                  type="text"
+                  name="amount-of-product"
+                  id="amount-of-product"
+                  value="0"
+                  readonly
+                />
+              </div>
+              <button class="btn-plus" type="button">
+                <img src="/images/icon-plus.svg" alt="" aria-hidden="true" />
+              </button>
+            </div>
+            <button type="submit" class="btn-add-to-cart" disabled>
+              <img src="/images/icon-cart.svg" alt="" aria-hidden="true" /> Add
+              to cart
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Preview modal -->
+    <article class="preview-modal">
+      <button class="btn-modal">
+        <img src="/images/icon-close.svg" alt="" aria-hidden="true" />
+      </button>
+      <div class="img-product">
+        <ul class="products products-modal">
+          <li>
+            <img
+              class="img-1"
+              src="/images/image-product-1.jpg"
+              alt="photo of fall limited edition sneakers"
+            />
+          </li>
+          <li>
+            <img
+              class="img-2"
+              src="/images/image-product-2.jpg"
+              alt="photo of fall limited edition sneakers"
+            />
+          </li>
+          <li>
+            <img
+              class="img-3"
+              src="/images/image-product-3.jpg"
+              alt="photo of fall limited edition sneakers"
+            />
+          </li>
+          <li>
+            <img
+              class="img-4"
+              src="/images/image-product-4.jpg"
+              alt="photo of fall limited edition sneakers"
+            />
+          </li>
+        </ul>
+        <ul class="thumbnails thumbnails-modal">
+          <li class="img-1">
+            <img
+              src="/images/image-product-1-thumbnail.jpg"
+              alt="thumbnail of fall limited edition sneakers"
+            />
+            <div class="overlay"></div>
+          </li>
+          <li class="img-2">
+            <img
+              src="/images/image-product-2-thumbnail.jpg"
+              alt="thumbnail of fall limited edition sneakers"
+            />
+            <div class="overlay"></div>
+          </li>
+          <li class="img-3">
+            <img
+              src="/images/image-product-3-thumbnail.jpg"
+              alt="thumbnail of fall limited edition sneakers"
+            />
+            <div class="overlay"></div>
+          </li>
+          <li class="img-4">
+            <img
+              src="/images/image-product-4-thumbnail.jpg"
+              alt="thumbnail of fall limited edition sneakers"
+            />
+            <div class="overlay"></div>
+          </li>
+        </ul>
+        <button class="btn-product btn-prev" type="button">
+          <img src="/images/icon-previous.svg" alt="" aria-hidden="true" />
+        </button>
+        <button class="btn-product btn-next" type="button">
+          <img src="/images/icon-next.svg" alt="" aria-hidden="true" />
+        </button>
+      </div>
+    </article>
+  </body>
+</html>
