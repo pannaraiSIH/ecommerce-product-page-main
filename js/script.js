@@ -54,11 +54,7 @@ minusBtn.addEventListener("click", () => {
 
 plusBtn.addEventListener("click", () => {
   input.value++;
-  if (input.value > 0) {
-    addToCartBtn.disabled = false;
-  } else {
-    addToCartBtn.disabled = true;
-  }
+  addToCartBtn.disabled = false;
 });
 
 //preview products on mobile
@@ -176,7 +172,6 @@ modalBtn.addEventListener("click", () => {
 });
 
 //open cart box
-
 cartBtn.addEventListener("click", () => {
   cartBox.classList.toggle("show");
 });
@@ -201,6 +196,7 @@ form.addEventListener("submit", (e) => {
   addItemToCart();
   totalPricing();
   input.value = 0;
+  addToCartBtn.disabled = true;
 });
 
 //delete item from cart
