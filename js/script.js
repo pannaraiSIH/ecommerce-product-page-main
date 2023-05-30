@@ -54,7 +54,11 @@ minusBtn.addEventListener("click", () => {
 
 plusBtn.addEventListener("click", () => {
   input.value++;
-  addToCartBtn.disabled = false;
+  if (input.value > 0) {
+    addToCartBtn.disabled = false;
+  } else {
+    addToCartBtn.disabled = true;
+  }
 });
 
 //preview products on mobile
